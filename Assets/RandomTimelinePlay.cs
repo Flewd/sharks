@@ -37,11 +37,3 @@ public class RandomTimelinePlay : MonoBehaviour
 		StartCoroutine(waitCheckOdds(interval));
 	}
 }
-
-/*
- * 
- * 
- * -1.66355
- * -1.213743
- * 0.149000
- * z rot 30.346

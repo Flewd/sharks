@@ -27,6 +27,8 @@ public class DialogBlock : MonoBehaviour,
     int orderedLogicIndex = 0;
     private DialogBlockLogic[] exitLogics;
 
+    public bool orderedLogicsComplete = false;
+
     // Use this for initialization
     void Start () {
 
@@ -78,6 +80,10 @@ public class DialogBlock : MonoBehaviour,
         if (index < orderedLogics.Length)
         {
             orderedLogics[index].execute(this);
+        }
+        else
+        {
+            orderedLogicsComplete = true;
         }
     }
 

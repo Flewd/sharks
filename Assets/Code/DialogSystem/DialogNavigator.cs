@@ -36,7 +36,10 @@ public class DialogNavigator : MonoBehaviour {
 
     public void ContinueButtonPressed()
     {
-        nextBlock(0);
+        if (CurrentBlock.orderedLogicsComplete)
+        {
+            nextBlock(0);
+        }
     }
 
     private void nextBlock(int index)
